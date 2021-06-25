@@ -26,36 +26,14 @@
 <body>
 
     <div class="main-header">
-
-
-
-
-
-        <div class="container">
-
-
-
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#hello" onclick="closeNav()">HELLO</a>
-                <a href="#resume" onclick="closeNav()">RESUME</a>
-                <a href="#portfolio" onclick="closeNav()">PORTFOLIO</a>
-                <a href="#testemonials" onclick="closeNav()">TESTIMONIAL</a>
-                <a href="#blog" onclick="closeNav()">BLOGS</a>
-                <a href="#contact" onclick="closeNav()">CONTACT</a>
-
-            </div>
-            <span class="openspan" style="font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776; </span>
-
-
-
-            <div id="menu" class="menu">
-                <div class="row  justify-content-center">
-                    <nav class="w-50 ">
-                        <ul class="list-inline ">
+        <div id="menu" class="navscroll">
+            <div class="row">
+                <nav id="nav" class="d-none ms-5 d-md-block navbar navbar-expand w-100 col-sm-12">
+                    <div class="container">
+                        <ul class="navbar-nav mr-auto nav__list">
 
                             <li class="items">
-                                <a href="#hello" onclick="animation('.hello .title')">HELLO</a>
+                                <a href="#hello" onclick="animation('.hello .title')">HELLO <span class="underscore">_</span></a>
 
                             </li>
 
@@ -83,15 +61,34 @@
 
                         </ul>
 
+                    </div>
+                </nav>
 
-                    </nav>
-
-                </div>
             </div>
+        </div>
+
+        <div class="container">
 
 
 
-            <div class="wrapper">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#hello" onclick="closeNav()">HELLO</a>
+                <a href="#resume" onclick="closeNav()">RESUME</a>
+                <a href="#portfolio" onclick="closeNav()">PORTFOLIO</a>
+                <a href="#testemonials" onclick="closeNav()">TESTIMONIAL</a>
+                <a href="#blog" onclick="closeNav()">BLOGS</a>
+                <a href="#contact" onclick="closeNav()">CONTACT</a>
+
+            </div>
+            <span class="openspan" style="font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776; </span>
+
+
+
+
+
+
+            <div class="wrapper col-lg-12">
 
 
                 <div class="profile-pic">
@@ -822,17 +819,18 @@
       if(scroll_start > offset.top) {
 
 
-          $(".menu").css({'background-color':'white', 'color':'grey' ,'box-shadow':' 0px 3px 6px #0000001a'});
+          $(".navbar").css({'background-color':'white', 'color':'grey' ,'box-shadow':' 0px 3px 6px #0000001a','margin-top':'0px'});
           
-          $(".list-inline li a").css({ 'color':'grey'});
+          
+          $(".navbar ul li a").css({ 'color':'grey'});
 
-          $(".menu").css('color', 'grey');
+          $("#nav").fadeIn(3000);
 
        }  if(offset.top==0 && scroll_start==0) {
 
            
-           $(".menu").css({'background-color':'transparent','box-shadow':''});
-          $(".list-inline li a").css({ 'color':'white'});
+           $(".navbar").css({'background-color':'transparent','box-shadow':''});
+          $(".navbar ul li a").css({ 'color':'white'});
 
 
      
