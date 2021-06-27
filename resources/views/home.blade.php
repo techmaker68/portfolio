@@ -408,31 +408,36 @@
 
         <section id="portfolio">
 
-            <div class="row">
+                        <div class="row">
 
-                <div class="col-md-10">
+                        <div class="col-md-12">
 
 
-                    <h1 class="portfolio-header">
+                            <h2 class="portfolio-header">
 
-                        My Projects_
-                    </h1>
-                    <div class="col-md-12">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="">ALL</a>
-                                </li>
-                                <!-- <li> <a href=""> Mobile apps</a></li> -->
-                                <li> <a href=""> WEbsites </a> </li>
-                                <!-- <li> <a href=""> Landing pages </a></li> -->
-                            </ul>
-                        </nav>
+                                My Projects_
+                            </h2>
+                        </div>
                     </div>
+                     <div class="row portfolio-nav">
+
+                            <div class="col-md-12">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="">ALL</a>
+                                        </li>
+                                         <li> <a href=""> Mobile apps</a></li>
+                                        <li> <a href=""> WEbsites </a> </li>
+                                         <li> <a href=""> Landing pages </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                     </div>
 
                     <div class="portfolio-cards">
 
-                        <div class="project-card">
+                        <div class="row project-card">
 
                             <div class="col-md-6 col-lg-5 project-card__img">
 
@@ -466,7 +471,7 @@
                                     <li>laravel</li>
 
                                 </ul>
-
+                                <a href="" class="project-card__link">advabeauty.com</a>
                             </div>
 
 
@@ -482,14 +487,13 @@
                     </div>
 
 
-                </div>
 
 
                 <div class="col-md-10">
 
 
 
-                    <div class="portfolio-cards">
+                    {{-- <div class="portfolio-cards">
 
                         <div class="project-card">
 
@@ -533,11 +537,10 @@
                         </div>
 
 
-                    </div>
+                    </div> --}}
 
 
                 </div>
-            </div>
 
         </section>
 
@@ -621,7 +624,7 @@
 
     <div class="outer-body">
 
-        <section id="blog">
+        <section id="blog" class="container section">
             <div class="row">
                 <div class="col-md-12">
 
@@ -774,7 +777,7 @@
                                 <form action="">
                                     <div class="form-group">
 
-                                        <input type="text" placeholder="your Name">
+                                        <input class="form-field js-field-name" type="text" placeholder="your Name">
                                     </div>
                                     <div class="form-group">
 
@@ -784,7 +787,7 @@
 
                                         <textarea rows="8" cols="50" placeholder="Your Message"> </textarea>
                                     </div>
-                                    <input type="button" class="site-button site-btn--form" type="submit" value="Send"> </input>
+                                    <input type="button" class="site__button site-btn--form" type="submit" value="Send"> </input>
                                 </form>
                             </div>
                         </div>
